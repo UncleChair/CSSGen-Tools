@@ -1,0 +1,21 @@
+{
+  "name": "Toolkits",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^1.15.2",
+    "nuxt": "^4.4.2",
+    "sass-embedded": "^1.98.0",
+    "vue": "^3.5.30",
+    "vue-router": "^5.0.3",
+    "vuetify": "^4.0.2",
+    "vuetify-nuxt-module": "^0.19.5"
+  }
+}
