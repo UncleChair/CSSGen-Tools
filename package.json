@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "@nuxt/eslint": "^1.15.2",
     "@nuxtjs/i18n": "^10.2.3",
     "nuxt": "^4.4.2",
