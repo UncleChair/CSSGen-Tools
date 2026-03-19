@@ -1,0 +1,65 @@
+{
+  "site_title": "CSS 工具箱",
+  "footer_text": "CSS 工具箱 — 开源 CSS 生成器与实用工具",
+  "back_to_main": "返回主站",
+  "back_to_tools": "返回工具列表",
+  "copy_css": "复制 CSS",
+  "copied": "已复制！",
+  "css_output": "CSS 代码",
+  "add": "添加",
+  "remove": "删除",
+  "preview": "预览",
+  "home": {
+    "hero_title": "CSS 工具箱",
+    "hero_subtitle": "免费在线工具箱，包含多种常用 CSS 功能和实用工具。"
+  },
+  "tools": {
+    "gradient": {
+      "title": "CSS 渐变生成器",
+      "description": "生成线性和径向 CSS 渐变，支持实时预览和一键复制。",
+      "type": "类型",
+      "linear": "线性",
+      "radial": "径向",
+      "angle": "角度",
+      "color_stops": "色标",
+      "add_stop": "添加色标"
+    },
+    "shadow": {
+      "title": "CSS 盒阴影生成器",
+      "description": "完整控制偏移、模糊、扩散和颜色，构建多层盒阴影。",
+      "add_layer": "添加阴影层",
+      "inset": "内阴影",
+      "x_offset": "X 偏移",
+      "y_offset": "Y 偏移",
+      "blur": "模糊",
+      "spread": "扩散",
+      "opacity": "透明度",
+      "shadow_label": "阴影",
+      "shadow_color": "阴影颜色"
+    },
+    "border_radius": {
+      "title": "CSS 圆角生成器",
+      "description": "独立控制每个角的圆角半径，实时预览任意形状。",
+      "corners": "圆角",
+      "link_all": "统一调整",
+      "top_left": "左上角",
+      "top_right": "右上角",
+      "bottom_left": "左下角",
+      "bottom_right": "右下角"
+    },
+    "text_shadow": {
+      "title": "CSS 文字阴影生成器",
+      "description": "通过可自定义的多层文字阴影为文本增添层次感和风格。",
+      "preview_text_label": "预览文字",
+      "text_input": "文字内容",
+      "text_color": "文字颜色",
+      "size": "字号",
+      "add_shadow": "添加阴影",
+      "shadow_label": "阴影",
+      "x": "X 偏移",
+      "y": "Y 偏移",
+      "blur": "模糊",
+      "opacity": "透明度"
+    }
+  }
+}

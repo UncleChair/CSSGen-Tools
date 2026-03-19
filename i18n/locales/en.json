@@ -1,0 +1,65 @@
+{
+  "site_title": "CSS Toolkits",
+  "footer_text": "CSS Toolkits — Open source CSS generators & utilities",
+  "back_to_main": "Back to main site",
+  "back_to_tools": "Back to all tools",
+  "copy_css": "Copy CSS",
+  "copied": "Copied!",
+  "css_output": "CSS Output",
+  "add": "Add",
+  "remove": "Remove",
+  "preview": "Preview",
+  "home": {
+    "hero_title": "CSS Toolkits",
+    "hero_subtitle": "Free online toolkits with multiple CSS tools and utilities."
+  },
+  "tools": {
+    "gradient": {
+      "title": "CSS Gradient Generator",
+      "description": "Generate linear and radial CSS gradients with a live preview and one-click copy.",
+      "type": "Type",
+      "linear": "Linear",
+      "radial": "Radial",
+      "angle": "Angle",
+      "color_stops": "Color Stops",
+      "add_stop": "Add Stop"
+    },
+    "shadow": {
+      "title": "CSS Box Shadow Generator",
+      "description": "Build layered box shadows with full control over offset, blur, spread and color.",
+      "add_layer": "Add Shadow Layer",
+      "inset": "Inset",
+      "x_offset": "X Offset",
+      "y_offset": "Y Offset",
+      "blur": "Blur",
+      "spread": "Spread",
+      "opacity": "Opacity",
+      "shadow_label": "Shadow",
+      "shadow_color": "Shadow color"
+    },
+    "border_radius": {
+      "title": "CSS Border Radius Generator",
+      "description": "Craft any shape by controlling each corner's radius independently with live preview.",
+      "corners": "Corners",
+      "link_all": "Link all",
+      "top_left": "Top Left",
+      "top_right": "Top Right",
+      "bottom_left": "Bottom Left",
+      "bottom_right": "Bottom Right"
+    },
+    "text_shadow": {
+      "title": "CSS Text Shadow Generator",
+      "description": "Add depth and style to text with customizable layered text shadows.",
+      "preview_text_label": "Preview Text",
+      "text_input": "Text",
+      "text_color": "Text color",
+      "size": "Size",
+      "add_shadow": "Add Shadow",
+      "shadow_label": "Shadow",
+      "x": "X",
+      "y": "Y",
+      "blur": "Blur",
+      "opacity": "Opacity"
+    }
+  }
+}
