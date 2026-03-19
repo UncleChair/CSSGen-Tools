@@ -60,6 +60,29 @@
       "y": "Y",
       "blur": "Blur",
       "opacity": "Opacity"
+    },
+    "minifier": {
+      "title": "CSS Minifier",
+      "description": "Compress and optimize your CSS with normal whitespace removal or advanced csso-powered minification.",
+      "normal_minify": "Normal Compress",
+      "strong_minify": "Strong Compress",
+      "load_example": "Load Example",
+      "clear": "Clear",
+      "input_label": "Original CSS",
+      "output_label": "Compressed CSS",
+      "input_placeholder": "Paste your CSS here...",
+      "output_placeholder": "Compressed CSS will appear here...",
+      "chars": "chars",
+      "original_size": "Original",
+      "minified_size": "Minified",
+      "saved": "Saved",
+      "compression_ratio": "Reduced",
+      "mode_normal": "Normal mode",
+      "mode_strong": "Strong mode",
+      "normal_desc": "Strips comments, collapses whitespace and newlines, removes spaces around punctuation. Fast and safe for any CSS.",
+      "strong_desc": "Powered by csso — removes redundant rules, merges selectors, shortens property values and more for maximum compression.",
+      "restore": "Restore",
+      "restore_desc": "Re-formats minified CSS by adding back indentation, newlines and spaces — making it human-readable again without changing any values."
     }
   }
 }

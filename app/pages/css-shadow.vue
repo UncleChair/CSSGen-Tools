@@ -63,11 +63,11 @@ async function copyCSS() {
 <template>
   <v-container class="py-8" style="max-width: 960px">
     <v-btn
-      :href="localePath('/')"
+      :to="localePath('/')"
       variant="text"
       color="primary"
       prepend-icon="mdi-arrow-left"
-      class="mb-6 px-0"
+      class="px-0"
     >
       {{ t('back_to_tools') }}
     </v-btn>

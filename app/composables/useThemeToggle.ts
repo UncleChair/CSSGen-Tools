@@ -11,7 +11,7 @@ export function useThemeToggle() {
   const isDark = computed(() => theme.global.current.value.dark)
 
   function setTheme(name: 'light' | 'dark') {
-    theme.global.name.value = name
+    theme.change(name)
     if (import.meta.client) {
       localStorage.setItem(STORAGE_KEY, name)
     }
@@ -26,7 +26,7 @@ export function useThemeToggle() {
     if (!import.meta.client) return
     const stored = localStorage.getItem(STORAGE_KEY) as 'light' | 'dark' | null
     if (stored === 'light' || stored === 'dark') {
-      theme.global.name.value = stored
+      theme.change(stored)
     }
   }
 

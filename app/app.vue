@@ -5,10 +5,13 @@ const { t, setLocale } = useI18n()
 const localePath = useLocalePath()
 const { isDark, toggle: toggleTheme, init: initTheme } = useThemeToggle()
 
-// Root URL of the current domain, resolved at runtime
-const mainSiteUrl = computed(() => import.meta.client ? document.location.origin : null)
+// Root URL of the current domain; set in onMounted to avoid SSR/client hydration mismatch
+const mainSiteUrl = ref<string | null>(null)
 
-onMounted(() => initTheme())
+onMounted(() => {
+  initTheme()
+  mainSiteUrl.value = document.location.origin
+})
 
 // setLocale() from @nuxtjs/i18n handles both locale state + navigation
 function switchLang(code: string) {
@@ -27,15 +30,16 @@ function switchLang(code: string) {
       </v-app-bar-title>
 
       <template #append>
-        <!-- Back to main site — only rendered when a home URL is detected -->
-        <v-tooltip v-if="mainSiteUrl" :text="t('back_to_main')" location="bottom">
+        <!-- Back to main site — same node on SSR and client to avoid hydration mismatch -->
+        <v-tooltip :text="t('back_to_main')" location="bottom">
           <template #activator="{ props }">
             <v-btn
               v-bind="props"
+              v-show="mainSiteUrl"
               icon="mdi-home-export-outline"
               variant="text"
               color="white"
-              :href="mainSiteUrl"
+              :href="mainSiteUrl || '#'"
             />
           </template>
         </v-tooltip>

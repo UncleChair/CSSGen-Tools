@@ -10,6 +10,13 @@ export interface ToolMeta {
 
 export const toolsMeta: ToolMeta[] = [
   {
+    key: 'tools.minifier',
+    icon: 'mdi-zip-box-outline',
+    color: 'teal-darken-2',
+    path: '/css-minifier',
+    tags: ['minify', 'compress', 'optimize'],
+  },
+  {
     key: 'tools.gradient',
     icon: 'mdi-gradient-horizontal',
     color: 'blue-darken-3',

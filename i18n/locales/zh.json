@@ -60,6 +60,29 @@
       "y": "Y 偏移",
       "blur": "模糊",
       "opacity": "透明度"
+    },
+    "minifier": {
+      "title": "CSS 压缩工具",
+      "description": "支持普通空白压缩和基于 csso 的强力压缩，快速减小 CSS 文件体积。",
+      "normal_minify": "普通压缩",
+      "strong_minify": "强力压缩",
+      "load_example": "加载示例",
+      "clear": "清空",
+      "input_label": "原始 CSS",
+      "output_label": "压缩 CSS",
+      "input_placeholder": "在此粘贴 CSS 代码...",
+      "output_placeholder": "压缩后的 CSS 将显示在此...",
+      "chars": "字符",
+      "original_size": "原始大小",
+      "minified_size": "压缩后",
+      "saved": "节省",
+      "compression_ratio": "压缩率",
+      "mode_normal": "普通模式",
+      "mode_strong": "强力模式",
+      "normal_desc": "删除注释，合并空白字符和换行符，去除标点符号周围的空格。速度快，兼容所有 CSS。",
+      "strong_desc": "基于 csso 引擎——删除冗余规则、合并选择器、简写属性值等，实现最大程度的压缩。",
+      "restore": "还原格式",
+      "restore_desc": "为压缩后的 CSS 重新添加缩进、换行和空格，还原为可读格式，不改变任何属性值。"
     }
   }
 }

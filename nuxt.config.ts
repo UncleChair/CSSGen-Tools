@@ -51,6 +51,15 @@ export default defineNuxtConfig({
     },
   },
 
+  // ─── Vite (fix modulePreload polyfill sourcemap warning) ─────────────────────
+  vite: {
+    build: {
+      modulePreload: {
+        polyfill: false,
+      },
+    },
+  },
+
   // ─── SSG ────────────────────────────────────────────────────────────────────
   nitro: {
     preset: 'static',
