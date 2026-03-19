@@ -4,7 +4,11 @@ export interface ToolMeta {
   key: string
   icon: string
   color: string
-  path: string
+  /**
+   * Route segment under `app.baseURL`, without a leading `/`.
+   * Example: `css-minifier` -> `/tools/css-minifier` (when baseURL is `/tools/`).
+   */
+  route: string
   tags: string[]
 }
 
@@ -13,35 +17,35 @@ export const toolsMeta: ToolMeta[] = [
     key: 'tools.minifier',
     icon: 'mdi-zip-box-outline',
     color: 'teal-darken-2',
-    path: '/css-minifier',
+    route: 'css-minifier',
     tags: ['minify', 'compress', 'optimize'],
   },
   {
     key: 'tools.gradient',
     icon: 'mdi-gradient-horizontal',
     color: 'blue-darken-3',
-    path: '/css-gradient',
+    route: 'css-gradient',
     tags: ['gradient', 'background', 'color'],
   },
   {
     key: 'tools.shadow',
     icon: 'mdi-square-opacity',
     color: 'light-blue-darken-2',
-    path: '/css-shadow',
+    route: 'css-shadow',
     tags: ['shadow', 'box-shadow', 'depth'],
   },
   {
     key: 'tools.border_radius',
     icon: 'mdi-rounded-corner',
     color: 'cyan-darken-2',
-    path: '/css-border-radius',
+    route: 'css-border-radius',
     tags: ['border-radius', 'shape', 'corner'],
   },
   {
     key: 'tools.text_shadow',
     icon: 'mdi-format-text',
     color: 'indigo-lighten-1',
-    path: '/css-text-shadow',
+    route: 'css-text-shadow',
     tags: ['text-shadow', 'typography', 'text'],
   },
 ]

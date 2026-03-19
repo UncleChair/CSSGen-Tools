@@ -19,6 +19,7 @@ useHead(() => ({
 const tools = computed(() =>
   toolsMeta.map((meta) => ({
     ...meta,
+    routePath: `/${meta.route}`,
     title: t(`${meta.key}.title`),
     description: t(`${meta.key}.description`),
   })),
@@ -40,50 +41,50 @@ const tools = computed(() =>
       <v-row justify="center">
         <v-col
           v-for="tool in tools"
-          :key="tool.path"
+          :key="tool.route"
           cols="12"
           sm="6"
           lg="4"
           xl="3"
         >
-          <!-- v-card with :href renders as <a> — no JS routing needed -->
-          <v-card
-            :href="localePath(tool.path)"
-            class="tool-card h-100"
-            rounded="lg"
-            elevation="2"
-            hover
-          >
-            <v-card-item>
-              <template #prepend>
-                <v-avatar :color="tool.color" size="48" class="mr-2">
-                  <v-icon :icon="tool.icon" color="white" />
-                </v-avatar>
-              </template>
-              <v-card-title class="text-body-1 font-weight-bold">
-                {{ tool.title }}
-              </v-card-title>
-            </v-card-item>
+          <NuxtLink :to="localePath(tool.routePath)" class="text-decoration-none">
+            <v-card
+              class="tool-card h-100"
+              rounded="lg"
+              elevation="2"
+              hover
+            >
+              <v-card-item>
+                <template #prepend>
+                  <v-avatar :color="tool.color" size="48" class="mr-2">
+                    <v-icon :icon="tool.icon" color="white" />
+                  </v-avatar>
+                </template>
+                <v-card-title class="text-body-1 font-weight-bold">
+                  {{ tool.title }}
+                </v-card-title>
+              </v-card-item>
 
-            <v-card-text class="text-body-2 text-medium-emphasis pt-0">
-              {{ tool.description }}
-            </v-card-text>
+              <v-card-text class="text-body-2 text-medium-emphasis pt-0">
+                {{ tool.description }}
+              </v-card-text>
 
-            <v-card-actions class="pt-0 pb-3 px-4">
-              <v-chip
-                v-for="tag in tool.tags"
-                :key="tag"
-                size="x-small"
-                variant="tonal"
-                :color="tool.color"
-                class="mr-1"
-              >
-                {{ tag }}
-              </v-chip>
-              <v-spacer />
-              <v-icon icon="mdi-arrow-right" :color="tool.color" size="20" />
-            </v-card-actions>
-          </v-card>
+              <v-card-actions class="pt-0 pb-3 px-4">
+                <v-chip
+                  v-for="tag in tool.tags"
+                  :key="tag"
+                  size="x-small"
+                  variant="tonal"
+                  :color="tool.color"
+                  class="mr-1"
+                >
+                  {{ tag }}
+                </v-chip>
+                <v-spacer />
+                <v-icon icon="mdi-arrow-right" :color="tool.color" size="20" />
+              </v-card-actions>
+            </v-card>
+          </NuxtLink>
         </v-col>
       </v-row>
     </v-container>

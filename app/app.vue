@@ -24,9 +24,9 @@ function switchLang(code: string) {
     <!-- ── Top navigation bar ─────────────────────────────────────────── -->
     <v-app-bar flat color="primary">
       <v-app-bar-title>
-        <a :href="localePath('/')" class="text-white text-decoration-none font-weight-bold">
+        <NuxtLink :to="localePath('/')" class="text-white text-decoration-none font-weight-bold">
           {{ t('site_title') }}
-        </a>
+        </NuxtLink>
       </v-app-bar-title>
 
       <template #append>
